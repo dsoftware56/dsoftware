@@ -15,7 +15,7 @@
 }
 .bg-team{
 	background-color: #d66060;
-	/*background: #f88f01;*/
+	/*background: #d95232;*/
 }
 .bg-enc-Trans{
   background: #5e90e3;
@@ -252,4 +252,15 @@ section h3.section-subheading {
 content-section {
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
+}
+.ir-arriba{
+  display:none;
+  background-repeat:no-repeat;
+  font-size:20px;
+  color:black;
+  cursor:pointer;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  z-index:2;
 }

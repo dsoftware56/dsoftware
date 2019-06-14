@@ -20,6 +20,13 @@
     <title>Sowemy</title>
   </head>
   <body>
+  	<!-- Boton hacia arriba -->
+	<a class="ir-arriba"  javascript:void(0) title="Volver arriba">
+	  <span class="fa-stack">
+	    <i class="fa fa-circle fa-stack-2x"></i>
+	    <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+	  </span>
+	</a>
   	 <nav class=" fixed-top bg-Encabezado">
   			<div class="container">
 				<!--Menu-->
@@ -27,10 +34,10 @@
     				<div class="col-md-12 topnav">
     					<img class="" src="logoRojo.png">
     					<div class="topnav-right mt-2">
-	    					<a class="active" href=”#”>Home</a>
-	    					<a href=”#”>Nosotros</a>
-	    					<a href=”#”>Servicios</a>
-	    					<a href=”#”>Contacto</a>
+	    					<a class="active" href="#">Home</a>
+	    					<a class="menuAct" href="#Acerca">Acerca de</a>
+	    					<a href="#Servicios">Servicios</a>
+	    					<a href="#Contacto">Contacto</a>
 	    				</div>
     				</div>
     			</div>
@@ -41,12 +48,10 @@
     		<!--Encabezado-->
     		<div class="row">
     			<div class="col-md-6">
-    				
-    					<img class="" src="Tit1.png">
-    					<img class="" src="TitEm.png">
-						<img class="" src="TitD.png">
-    					<img class="" src="TitTec.png">
-    				
+					<img class="" src="Tit1.png">
+					<img class="" src="TitEm.png">
+					<img class="" src="TitD.png">
+					<img class="" src="TitTec.png">
     			</div>
     			<div class="col-md-6">
     				<div class="col-md-3">
@@ -56,97 +61,88 @@
     		</div>	
     	</div>
 	</div>
-	<div class="container-fluid bg-gris">
-	    <!--Quienes somos-->
+	<div class="container-fluid bg-gris" id ="Servicios">
     	<div class="container py-5">
-    	
-  <!-- Services -->
-  <section id="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Servicios</h2>
-          <h3 class="section-subheading text-muted">Desarrollo de Software de Negocios Globales.</h3>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-naraja"></i>
-            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Servicio 1</h4>
-          <p class="text-muted">a convertido en una opción viable para reducir costos y mejorar la eficiencia de las operaciones. El servicio de Outsourcing de Sowemy ofrece un conjunto de servicios flexibles que brinda a sus clientes acceso a expertos altamente capacitados, recursos especializados e instalaciones de primera clase</p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-naraja"></i>
-            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Servicio 2</h4>
-          <p class="text-muted">Amplia biblioteca de Sowemy de cursos de capacitación, materiales educativos y recursos de usuario proporcionar a los clientes una excelente plataforma para desarrollar un programa de formación eficaz. El conjunto de los recursos permite a los clientes a elegir las mejores opciones para satisfacer sus necesidades y programas ajustados a sus preferencias individuales del usuario.</p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-naraja"></i>
-            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Servicio 3</h4>
-          <p class="text-muted">Soporte de Sowemy es una operación mundial con más de 350 personas en 14 centros de soportes ubicados en todo el mundo. Ofrecemos a nuestros clientes el mejor soporte técnico y de aplicaciones posible, disponible hoy a través de personal experto en nuestras aplicaciones, tecnología e industria, utilizando herramientas de soporte y tecnología avanzadas..</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-<!---
-    		<h1 class="display-3 text-center text-danger">Servicios </h1>
-    		<div class="row  text-justify mb-5">
-    			<div class="col-md-4">
-	    			<div class="circulo circulo-white my-5">
-	    				<p>Hoaldn</p>
-	    			</div>
-					<div class="row my-5">
-				    	<p class="px-3">
-				    		<small class="text-muted">Y un subtítulo aún más ingenioso para arrancar. 
-				    			Comience sus esfuerzos de marketing con este ejemplo basado en las páginas de marketing de Appl
-				    		</small>
-				    	</p>
-			    	</div>
-			    	<button type="button" class="btn btn-rojo">Leer mas..</button>
-		    	</div>
-		    	<div class="col-md-4">
-		    		<div class="circulo circulo-white my-5">
-	    				<p>Hoaldn</p>
-	    			</div>
-			    	<div class="row my-5">
-				    	<p class="px-3">
-				    		<small class="text-muted">Y un subtítulo aún más ingenioso para arrancar. 
-				    			Comience sus esfuerzos de marketing con este ejemplo basado en las páginas de marketing de Appl
-				    		</small>
-				    	</p>
-			    	</div>
-			    	<button type="button" class="btn btn-rojo">Leer mas..</button>
-		    	</div>
-		    	<div class="col-md-4">
-		    		<div class="circulo circulo-white my-5">
-	    				<p>Hoaldn</p>
-	    			</div>
-	    			<div class="row my-5">
-				    	<p class="px-3">
-				    		<small class="text-muted">Y un subtítulo aún más ingenioso para arrancar. 
-				    			Comience sus esfuerzos de marketing con este ejemplo basado en las páginas de marketing de Appl
-				    		</small>
-				    	</p>
-			    	</div>
-			    	<button type="button" class="btn btn-rojo">Leer mas..</button>
-		    	</div>
-	    	</div>
---->
+		  <!-- Services -->
+		  <section id="services">
+		    <div class="container">
+		      <div class="row">
+		        <div class="col-lg-12 text-center">
+		          <h2 class="section-heading text-uppercase">Servicios</h2>
+		          <h3 class="section-subheading text-muted">Desarrollo de Software de Negocios Globales.</h3>
+		        </div>
+		      </div>
+		      <div class="row text-center">
+		        <div class="col-md-4">
+		          <span class="fa-stack fa-4x">
+		            <i class="fas fa-circle fa-stack-2x text-naraja"></i>
+		            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+		          </span>
+		          <h4 class="service-heading mb-4">Software Empresarial</h4>
+		          <p class="text-muted">* E-Commerce</p>
+				  <p class="text-muted">* Aplicaciones bancarias</p>
+				  <p class="text-muted">* Cotizadores financieros</p>
+				  <p class="text-muted">* Sistemas para Back-office</p>
+		        </div>
+		        <div class="col-md-4">
+		          <span class="fa-stack fa-4x">
+		            <i class="fas fa-circle fa-stack-2x text-naraja"></i>
+		            <i class="fas fa-tablet-alt fa-stack-1x fa-inverse"></i>
+		          </span>
+		          <h4 class="service-heading mb-4">App Móviles</h4>
+		          <p class="text-muted">* Progressive Web Apps</p>
+				  <p class="text-muted">* iOS y Android</p>
+				  <p class="text-muted">* Smartphone, Tablet y Smartwatch</p>
+				  <p class="text-muted">* Apple TV y Android TV</p>
+		        </div>
+		        <div class="col-md-4">
+		          <span class="fa-stack fa-4x">
+		            <i class="fas fa-circle fa-stack-2x text-naraja"></i>
+		            <i class="fab fa-html5 fa-stack-1x fa-inverse"></i>
+		          </span>
+		          <h4 class="service-heading mb-4">App Web</h4>
+		         	<p class="text-muted">* Diseño y desarrollo web </p> 
+		         	<p class="text-muted">* (Mobile First, Responsive, y Adaptive)</p>
+		         	<p class="text-muted">* Posicionamiento en buscadores </p>	
+		        </div>
+		      </div>
+		    </div>
+		  </section>
 	    </div>
 	 </div>
-	 <!--- Nosotros --->
+	 <!--- Acerca de  --->
+	<div class="container-fluid bg-team" id="Acerca">
+	 	<div class="container py-5 text-white">
+	 		<h4 class="display-4 mb-4 text-center">Acerca de</h4>
+	 		<div class="row">
+	 			<div class="col-md-8 offset-md-2">
+	 				<div class="Myborder-top mb-5"></div>
+	 				<P>
+	 					Sowemy es una empresa inovadora, cuenta con personas joves con la mejor actitud poner en practica las mejores tecnologias del mercado, con la mano de personas con años de experiencia, junstos forma un gran equipo de trabajo.
+
+			 			Nuestro equipo cuenta con más de 10 años de experiencia en el desarrollo de software para:
+
+						<p>Banca y Servicios Financieros</p>
+						<p>Retail, E-commerce y Manufactura</P>
+						<p>Medios y Entretenimiento</p>
+						<p>Alta tecnología y Comunicaciones</p>
+						<p>Energía, Recursos e Infraestructura</p>
+						<p>Salud y Bienestar</p>
+						<p>Gobierno y Servicios Públicos.</p>
+			 		</P>
+			 		<p>
+			 			Somos una agencia de diseño web que da soporte a empresas y despachos que buscan profesionales para desarrollar aplicaciones Web con un equipo de programación y diseño con experiencia.
+
+						Todos nuestros proyectos cumplen con estándares de calidad y accesibilidad web, las páginas web que desarrollamos son maquetadas con las técnicas más actuales lo que garantiza una presencia clara y bien planeada
+			 		</p>
+			 		<div class="text-center mt-5">
+			 			<button type="button" class="btn btn-light">Light</button>
+			 		</div>
+	 			</div>		
+	 		</div>
+	    </div>
+	</div>
+	 <!--- Nosotros 
 	 <div class="container-fluid bg-Nosotros">
 	 	<div class="container text-white p-5">
 	 		<div class="row text-center">
@@ -214,17 +210,20 @@
 
 	 	</div>
 	 </div>
+	 --->
 	 <!--- Tecnologias --->
 	 <div class="container-fluid bg-gris py-5">
 	 	<div class="container p-5">
 	 		<div class="row mb-5 text-center">
 	 			<div class="col-md-12">
-	 				<h1 class="text-size-Service section-heading text-uppercase">Servicios</h1>	
+	 				<div class="content-section-heading text-center">
+				    	<h2 class="mb-5">Tecnologías</h2>
+				    </div>
 	 			</div>
 	 		</div>
 	 		<div class="row my-5">
 	 			<div class="col-md-4">
-	 				<div class="circulo circulo-sm circulo-naranja">
+	 				<div class="circulo circulo-sm circulo-amarillo">
 	    				<h4>C#</h4>
 	    			</div>
 	 			</div>
@@ -241,7 +240,7 @@
 	 		</div>
 	 		<div class="row my-5">	
 	 			<div class="col-md-4">
-	 				<div class="circulo circulo-lg circulo-amarillo">
+	 				<div class="circulo circulo-lg circulo-naranja">
 	    				<h4>ELASTIC SEARCH</h4>
 	    			</div>
 	 			</div>
@@ -256,14 +255,47 @@
 	    			</div>
 	 			</div>
 	 		</div>
-
+	 		<div class="row my-5">
+	 			<div class="col-md-4">
+	 				<div class="circulo circulo-ms circulo-rojo">
+	    				<h4>Microservicios</h4>
+	    			</div>
+	 			</div>
+	 			<div class="col-md-4">
+	 				<div class="circulo circulo-sm circulo-violeta">
+	    				<h4>KOTLIN</h4>
+	    			</div>
+	 			</div>
+	 			<div class="col-md-4">
+	 				<div class="circulo circulo-md circulo-amarillo">
+	    				<h4>ANDROID</h4>
+	    			</div>
+	 			</div>
+	 		</div>
+	 		<div class="row my-5">
+	 			<div class="col-md-4">
+	 				<div class="circulo circulo-md circulo-verde">
+	    				<h4>Microservicios</h4>
+	    			</div>
+	 			</div>
+	 			<div class="col-md-4">
+	 				<div class="circulo circulo-lg circulo-azul">
+	    				<h4>KOTLIN</h4>
+	    			</div>
+	 			</div>
+	 			<div class="col-md-4">
+	 				<div class="circulo circulo-sm circulo-rojo">
+	    				<h4>ANDROID</h4>
+	    			</div>
+	 			</div>
+	 		</div>
 	 	</div>
 	 </div>
 
-	 <section class="content-section" id="portfolio">
+	<section class="content-section" id="portfolio">
     <div class="container">
       <div class="content-section-heading text-center">
-        <h2 class="mb-5">Equipo de trabajo</h2>
+        <h2 class="mb-5">Fundadores</h2>
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6 text-right">
@@ -271,7 +303,7 @@
             <span class="caption text-left">
               <span class="caption-content">
                 <h2>Javier Pulido</h2>
-                <p class="mb-0">Fundador y desarrollador de software</p>
+                <p class="mb-0">Ing. Sistemas Computacionales</p>
               </span>
             </span>
             <img class="img-fluid" src="ImgPropias/javier-250.jpg" alt="">
@@ -282,7 +314,7 @@
             <span class="caption">
               <span class="caption-content text-left">
                 <h2>Fernando alcaraz</h2>
-                <p class="mb-0">Fundador y desarrollador de software. </p>
+                <p class="mb-0">Ing. Sistemas Computacionales</p>
               </span>
             </span>
             <img class="img-fluid" src="ImgPropias/fer-office.jpg" alt="">
@@ -292,7 +324,7 @@
     </div>
   </section>
 
-	 <!--- Acerca de  --->
+	<!--- Acerca de 
 	<div class="container-fluid bg-team">
 	 	<div class="container py-5 text-white">
 	 		<h4 class="display-4 mb-4 text-center">Acerca de</h4>
@@ -300,20 +332,21 @@
 	 			<div class="col-md-8 offset-md-2">
 	 				<div class="Myborder-top mb-5"></div>
 	 				<P>
-			 			Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.
+	 					Sowemy es una empresa inovadora, cuenta con personas joves con la mejor actitud poner en practica las mejores tecnologias del mercado, con la mano de personas con años de experiencia, junstos forma un gran equipo de trabajo.
+
+			 			Nuestro equipo cuenta con más de 10 años de experiencia en el desarrollo de software para:
+
+						<p>Banca y Servicios Financieros</p>
+						<p>Retail, E-commerce y Manufactura</P>
+						<p>Medios y Entretenimiento</p>
+						<p>Alta tecnología y Comunicaciones</p>
+						<p>Energía, Recursos e Infraestructura</p>
+						<p>Salud y Bienestar</p>
+						<p>Gobierno y Servicios Públicos.</p>
+
 			 		</P>
-			 		<p>		
-						Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
-			 		</P>
-			 		<p>		
-						Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
-			 		</P>
-			 		<p>		
-						Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
-			 		</P>
-			 		<p>		
-						Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
-			 		</P>
+			 	
+			 		
 			 		<div class="text-center mt-5">
 			 			<button type="button" class="btn btn-light">Light</button>
 			 		</div>	
@@ -323,40 +356,39 @@
 	 		</div>
 	    </div>
 	</div>
+	 --->
 	  <!--- Contacto --->
-	 <div class="container-fluid bg-gris py-5">
+	 <div class="container-fluid bg-gris py-5" id="Contacto">
 	 	<div class="container p-5">
 	 		<div class="row mb-5">
-	 			<div class="col-md-12">
+	 			<div class="col-md-12 text-center">
 	 				<h1 class="display-3 text-violeta">Contacto </h1>		
 	 			</div>
 	 		</div>
 	 		<div class="row text-violeta my-5">
-	 			<div class="col-md-4">
+	 			<div class="col-md-5">
     				<p class="text-contacto text-violeta">
-						Porfavor, deja tu mensaje y los mas pronto posible te responderemos.
+						Por favor, deja tu mensaje y los más pronto posible te responderemos.
 					</p>
 	 			</div>
-	 			<div class="col-md-6">
+	 			<div class="col-md-6 offset-md-1">
 	 				<form>
 					  <div class="form-group">
-					    <label for="titulo">Titulo</label>
-					    <input type="text" class="form-control border-form" placeholder="Titulo">
-					    <small id="emailHelp" class="form-text text-muted">Llena los datos que se presentan a continuacion</small>
+					    <label for="titulo">Título</label>
+					    <input type="text" class="form-control border-form" placeholder="Introduce el título...">
+					    
 					  </div>
 					  <div class="form-group">
-					    <label for="titulo">Correo:</label>
-					    <input type="text" class="form-control border-form" placeholder="Correo">
-					    <small id="emailHelp" class="form-text text-muted">Llena los datos que se presentan a continuacion</small>
+					    <label for="titulo">Correo</label>
+					    <input type="text" class="form-control border-form" placeholder="Introduce el correo...">
 					  </div>
 					  <div class="form-group">
-					    <label for="titulo">Telefono</label>
-					    <input type="text" class="form-control border-form" placeholder="Telefono">
-					    <small id="emailHelp" class="form-text text-muted">Llena los datos que se presentan a continuacion</small>
+					    <label for="titulo">Teléfono</label>
+					    <input type="text" class="form-control border-form" placeholder="Introduce el teléfono...">
 					  </div>
 					  <div class="form-group">
-					      <label for="Mensaje">Mensaje:</label>
-					      <textarea class="form-control border-form" rows="5" id="mensaje" name="text"></textarea>
+					      <label for="Mensaje">Mensaje</label>
+					      <textarea class="form-control border-form" rows="5" id="mensaje" name="text" placeholder="Introduce el mensaje..."></textarea>
 					  </div>
 					  <button type="submit" class="btn btn-violeta">Enviar</button>
 					</form>
@@ -393,7 +425,7 @@
 						<p></p>
 	 			</div>
 	 			<div class="col-md-3">
-	 				<h4 class="mb-4">Resdes Sociales</h4>
+	 				<h4 class="mb-4">Redes Sociales</h4>
 	 				<div class="Myborder-top mb-5"></div>
 	    				<i class="fab fa-facebook-square fa-2x pr-2"></i>
 		                <i class="fab fa-youtube-square fa-2x pr-2"></i>
@@ -420,5 +452,7 @@
 		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="goTop.js"></script>
 </body>
 </html>
