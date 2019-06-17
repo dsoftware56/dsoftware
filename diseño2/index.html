@@ -17,13 +17,14 @@
 
     <link href="stylish-portfolio.css" rel="stylesheet">
 
+    <link rel="shortcut icon" href="soloLogo.ico">
     <title>Sowemy</title>
   </head>
   <body>
   	<!-- Boton hacia arriba -->
 	<a class="ir-arriba"  javascript:void(0) title="Volver arriba">
 	  <span class="fa-stack">
-	    <i class="fa fa-circle fa-stack-2x"></i>
+	    <i class="fa fa-circle fa-stack-2x bg-color-top"></i>
 	    <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
 	  </span>
 	</a>
@@ -33,11 +34,11 @@
     			<div class="row">
     				<div class="col-md-12 topnav">
     					<img class="" src="logoRojo.png">
-    					<div class="topnav-right mt-2">
-	    					<a class="active" href="#">Home</a>
-	    					<a class="menuAct" href="#Acerca">Acerca de</a>
-	    					<a href="#Servicios">Servicios</a>
-	    					<a href="#Contacto">Contacto</a>
+    					<div class="topnav-right mt-2" id="activar">
+	    					<a class="activarEnlace active" href="#">Home</a>
+	    					<a class="activarEnlace" href="#Acerca">¿Como lo hacemos?</a>
+	    					<a class="activarEnlace" href="#Servicios">Servicios</a>
+	    					<a class="activarEnlace" href="#Contacto">Contacto</a>
 	    				</div>
     				</div>
     			</div>
@@ -49,7 +50,7 @@
     		<div class="row">
     			<div class="col-md-6">
 					<img class="" src="Tit1.png">
-					<img class="" src="TitEm.png">
+					<img class="" src="TitEm1.png">
 					<img class="" src="TitD.png">
 					<img class="" src="TitTec.png">
     			</div>
@@ -61,7 +62,7 @@
     		</div>	
     	</div>
 	</div>
-	<div class="container-fluid bg-gris" id ="Servicios">
+	<div class="container-fluid bg-gris pt-5" id ="Servicios">
     	<div class="container py-5">
 		  <!-- Services -->
 		  <section id="services">
@@ -111,106 +112,42 @@
 	    </div>
 	 </div>
 	 <!--- Acerca de  --->
-	<div class="container-fluid bg-team" id="Acerca">
+	<div class="container-fluid bg-team pt-5" id="Acerca">
 	 	<div class="container py-5 text-white">
-	 		<h4 class="display-4 mb-4 text-center">Acerca de</h4>
+	 		<h4 class="display-4 mb-4 text-center">Todo se trata de ti</h4>
 	 		<div class="row">
-	 			<div class="col-md-8 offset-md-2">
+	 			<div class="col-md-8 offset-md-2 text-justify">
 	 				<div class="Myborder-top mb-5"></div>
-	 				<P>
-	 					Sowemy es una empresa inovadora, cuenta con personas joves con la mejor actitud poner en practica las mejores tecnologias del mercado, con la mano de personas con años de experiencia, junstos forma un gran equipo de trabajo.
-
-			 			Nuestro equipo cuenta con más de 10 años de experiencia en el desarrollo de software para:
-
-						<p>Banca y Servicios Financieros</p>
-						<p>Retail, E-commerce y Manufactura</P>
-						<p>Medios y Entretenimiento</p>
-						<p>Alta tecnología y Comunicaciones</p>
-						<p>Energía, Recursos e Infraestructura</p>
-						<p>Salud y Bienestar</p>
-						<p>Gobierno y Servicios Públicos.</p>
-			 		</P>
 			 		<p>
-			 			Somos una agencia de diseño web que da soporte a empresas y despachos que buscan profesionales para desarrollar aplicaciones Web con un equipo de programación y diseño con experiencia.
+			 			Compartir la visión de nuestros clientes es nuestra mejor herramienta, con una misma meta es más fácil generar los resultados esperados.
 
-						Todos nuestros proyectos cumplen con estándares de calidad y accesibilidad web, las páginas web que desarrollamos son maquetadas con las técnicas más actuales lo que garantiza una presencia clara y bien planeada
+			 		</p>
+			 		<p>
+			 			<i class="far fa-check-circle"></i> Módelos ágiles de desarrollo de software
+			 		</p>
+ 					<p>		
+ 						
+ 						Seguimos modelos ágiles de desarrollo de software que nos permite hacer sistemas escalables, con bajos índices de error, que responden rápidamente y son compatibles con múltiples plataformas.
+			 		</p>
+			 		<p>
+			 			<i class="far fa-check-circle"></i> Amigable con el usuario
+ 					</p>
+ 					<p>
+ 						Experiencia de usuario Dedicamos tiempo y esfuerzo en hacer sistemas que sean fáciles de usar y den una buena experiencia a los usuarios. Creemos que una aplicación exitosa no debería requerir de un manual de usuario.
+			 		</p>
+			 		<p>
+			 			<i class="far fa-check-circle"></i> Construido en plataformas robustas
+			 		</p>
+ 					<p>
+ 						Frameworks Nuestra estrategia de desarrollo empieza desde los cimientos. Para ello, te orientaremos para elegir la infraestructura y lenguaje de programación adecuado de acuerdo al tamaño, presupuesto y objetivos de tu proyecto.
 			 		</p>
 			 		<div class="text-center mt-5">
-			 			<button type="button" class="btn btn-light">Light</button>
+			 			<a href="#Contacto"><button type="button" class="btn btn-light">Contizar</button></a>
 			 		</div>
 	 			</div>		
 	 		</div>
 	    </div>
 	</div>
-	 <!--- Nosotros 
-	 <div class="container-fluid bg-Nosotros">
-	 	<div class="container text-white p-5">
-	 		<div class="row text-center">
-	 			<div class="col-md-12">
-	 				<h1 class="display-3">Nosotros </h1>		
-	 			</div>
-	 		</div>
-	 		
- 			<div class="row my-5">
-	 			<div class="col-md-6 offset-md-4">
-	 				<h1 class="display-4 text-center">Vision </h1>	
-	 			</div>
- 			</div>
- 			<div class="row">
-	 			<div class="col-md-4">
-	 				<i class="fas fa-low-vision fa-7x"></i>
-	 			</div>
-	 			<div class="col-md-6 text-justify">
- 					<p class="Lead"> Y un subtítulo aún más ingenioso para arrancar. 
-			    			Comience sus esfuerzos de marketing con este ejemplo basado en las páginas de marketing de Appl
-			    	</p>
-			    		<p class="Lead"> Y un subtítulo aún más ingenioso para arrancar. 
-			    			Comience sus esfuerzos de marketing con este ejemplo basado en las páginas de marketing de Appl
-			    	</p>	
-	 			</div>
- 			</div>
-
-	 		<div class="row mb-5">
-	 			<div class="col-md-6 offset-md-4">
-	 				<h1 class="display-4 text-center">valores </h1>	
-	 			</div>
- 			</div>
- 			<div class="row">
-	 			<div class="col-md-4">
-	 				<i class="fas fa-hands fa-7x"></i>
-	 			</div>
-	 			<div class="col-md-6 text-justify">
- 					<p class="Lead"> Y un subtítulo aún más ingenioso para arrancar. 
-			    			Comience sus esfuerzos de marketing con este ejemplo basado en las páginas de marketing de Appl
-			    	</p>
-			    		<p class="Lead"> Y un subtítulo aún más ingenioso para arrancar. 
-			    			Comience sus esfuerzos de marketing con este ejemplo basado en las páginas de marketing de Appl
-			    	</p>	
-	 			</div>
- 			</div>
-
-	 		<div class="row mb-5">
-	 			<div class="col-md-6 offset-md-4">
-	 				<h1 class="display-4 text-center">Mision </h1>	
-	 			</div>
- 			</div>
- 			<div class="row">
-	 			<div class="col-md-4">
-	 				<i class="fas fa-bullseye fa-7x"></i>
-	 			</div>
-	 			<div class="col-md-6 text-justify">
- 					<p class="Lead"> Y un subtítulo aún más ingenioso para arrancar. 
-			    			Comience sus esfuerzos de marketing con este ejemplo basado en las páginas de marketing de Appl
-			    	</p>
-			    		<p class="Lead"> Y un subtítulo aún más ingenioso para arrancar. 
-			    			Comience sus esfuerzos de marketing con este ejemplo basado en las páginas de marketing de Appl
-			    	</p>	
-	 			</div>
- 			</div>
-
-	 	</div>
-	 </div>
-	 --->
 	 <!--- Tecnologias --->
 	 <div class="container-fluid bg-gris py-5">
 	 	<div class="container p-5">
@@ -275,17 +212,17 @@
 	 		<div class="row my-5">
 	 			<div class="col-md-4">
 	 				<div class="circulo circulo-md circulo-verde">
-	    				<h4>Microservicios</h4>
+	    				<h4>Scrum</h4>
 	    			</div>
 	 			</div>
 	 			<div class="col-md-4">
 	 				<div class="circulo circulo-lg circulo-azul">
-	    				<h4>KOTLIN</h4>
+	    				<h4>Sql server</h4>
 	    			</div>
 	 			</div>
 	 			<div class="col-md-4">
-	 				<div class="circulo circulo-sm circulo-rojo">
-	    				<h4>ANDROID</h4>
+	 				<div class="circulo circulo-md circulo-rojo">
+	    				<h4>Web services</h4>
 	    			</div>
 	 			</div>
 	 		</div>
@@ -323,63 +260,29 @@
       </div>
     </div>
   </section>
-
-	<!--- Acerca de 
-	<div class="container-fluid bg-team">
-	 	<div class="container py-5 text-white">
-	 		<h4 class="display-4 mb-4 text-center">Acerca de</h4>
-	 		<div class="row">
-	 			<div class="col-md-8 offset-md-2">
-	 				<div class="Myborder-top mb-5"></div>
-	 				<P>
-	 					Sowemy es una empresa inovadora, cuenta con personas joves con la mejor actitud poner en practica las mejores tecnologias del mercado, con la mano de personas con años de experiencia, junstos forma un gran equipo de trabajo.
-
-			 			Nuestro equipo cuenta con más de 10 años de experiencia en el desarrollo de software para:
-
-						<p>Banca y Servicios Financieros</p>
-						<p>Retail, E-commerce y Manufactura</P>
-						<p>Medios y Entretenimiento</p>
-						<p>Alta tecnología y Comunicaciones</p>
-						<p>Energía, Recursos e Infraestructura</p>
-						<p>Salud y Bienestar</p>
-						<p>Gobierno y Servicios Públicos.</p>
-
-			 		</P>
-			 	
-			 		
-			 		<div class="text-center mt-5">
-			 			<button type="button" class="btn btn-light">Light</button>
-			 		</div>	
-			 			
-			 		
-	 			</div>		
-	 		</div>
-	    </div>
-	</div>
-	 --->
-	  <!--- Contacto --->
+	 <!--- Contacto --->
 	 <div class="container-fluid bg-gris py-5" id="Contacto">
 	 	<div class="container p-5">
 	 		<div class="row mb-5">
 	 			<div class="col-md-12 text-center">
-	 				<h1 class="display-3 text-violeta">Contacto </h1>		
+	 				<h1 class="display-3 text-violeta">Cuentanos tu idea</h1>		
 	 			</div>
 	 		</div>
 	 		<div class="row text-violeta my-5">
 	 			<div class="col-md-5">
     				<p class="text-contacto text-violeta">
-						Por favor, deja tu mensaje y los más pronto posible te responderemos.
+						Ponemos a tu disposición nuestro formulario de contacto, para que te comuniques con nosotros.
 					</p>
 	 			</div>
 	 			<div class="col-md-6 offset-md-1">
 	 				<form>
 					  <div class="form-group">
-					    <label for="titulo">Título</label>
+					    <label for="titulo">Título(*)</label>
 					    <input type="text" class="form-control border-form" placeholder="Introduce el título...">
 					    
 					  </div>
 					  <div class="form-group">
-					    <label for="titulo">Correo</label>
+					    <label for="titulo">Correo(*)</label>
 					    <input type="text" class="form-control border-form" placeholder="Introduce el correo...">
 					  </div>
 					  <div class="form-group">
@@ -387,7 +290,7 @@
 					    <input type="text" class="form-control border-form" placeholder="Introduce el teléfono...">
 					  </div>
 					  <div class="form-group">
-					      <label for="Mensaje">Mensaje</label>
+					      <label for="Mensaje">Mensaje(*)</label>
 					      <textarea class="form-control border-form" rows="5" id="mensaje" name="text" placeholder="Introduce el mensaje..."></textarea>
 					  </div>
 					  <button type="submit" class="btn btn-violeta">Enviar</button>
@@ -410,13 +313,15 @@
 	 			<div class="col-md-3">
 	 				<h4 class="mb-4">Links</h4>
 	 				<div class="Myborder-top mb-5"></div>
-	    				<p>Home</p>
-						<p>Acerca de</p>
-						<p>Servicios</p>
-						<p>Contacto</p>
+	 				<div class="buttomEnlace">
+	    				<a href="#">Home</a>
+						<a href="#Acerca">Acerca de</a>
+						<a href="#Servicios">Servicios</a>
+						<a href="#Contacto">Contacto</a>
+					</div>	
 	 			</div>
 	 			<div class="col-md-3">
-	 				<h4 class="mb-4">Nostros</h4>
+	 				<h4 class="mb-4">Contacto</h4>
 	 				<div class="Myborder-top mb-5">
 	    			</div>
 	    				<p>info@sowemy.com</p>
@@ -427,9 +332,12 @@
 	 			<div class="col-md-3">
 	 				<h4 class="mb-4">Redes Sociales</h4>
 	 				<div class="Myborder-top mb-5"></div>
-	    				<i class="fab fa-facebook-square fa-2x pr-2"></i>
-		                <i class="fab fa-youtube-square fa-2x pr-2"></i>
-		            
+	 				<div class="buttomEnlaceIcon">
+	    				<a href="https://www.facebook.com/Sowemy-869629480065353"><i class="fab fa-facebook-square fa-2x pr-2"></i>
+	    				</a>
+		                <a href="https://www.youtube.com/channel/UCcdZkRm30lMBmZe3Sz5DTxw"><i class="fab fa-youtube-square fa-2x pr-2"></i>
+		            	</a>
+		            </div>
 	 			</div>
 	 		</div>
 
