@@ -295,3 +295,13 @@ content-section {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+.margin-left-x{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.border-t{
+  border-style: solid;
+  border-width: 2px 0px 0px 0px;
+  border-color: black;
+}
