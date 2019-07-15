@@ -5,18 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap CSS 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    <link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css">
     <!--*<link rel="stylesheet" type="text/css" href="icomoon/style.css">
     <link rel="stylesheet" type="text/css" href="icomoon/demo-files/demo.css">
     *-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="Mystyle.css">
-    <link rel="stylesheet" type="text/css" href="fixed-top.css">
-
-    <link href="stylish-portfolio.css" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="style/css/Mystyle.css">
+    <link rel="stylesheet" type="text/css" href="style/css/fixed-top.css">
+    <link href="style/css/stylish-portfolio.css" rel="stylesheet">
+    
     <link rel="shortcut icon" href="soloLogo.ico">
     <title>Sowemy</title>
   </head>
@@ -28,153 +28,157 @@
 	    <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
 	  </span>
 	</a>
+	<!-- Barra de navegación -->
   	<div class="container-fluid">
-	  	<nav class="fixed-top bg-Encabezado">
+	  	<nav class="fixed-top bg-Encabezado" id="Barra">
 			<div class="container">
 				<!--Menu-->
 				<div class="row">
 					<div class="col-md-12 topnav">
-						<img class="" src="logo-head1.png">
-						<div class="topnav-right mt-2" id="activar">
+						<img class="" src="logo-head3.png">
+						<!--<div class="topnav-right mt-2" id="activar">
 	    					<a class="activarEnlace active" href="#">Home</a>
-	    					<a class="activarEnlace" href="#Acerca">¿Cómo lo hacemos?</a>
 	    					<a class="activarEnlace" href="#Servicios">Servicios</a>
+	    					<a class="activarEnlace" href="#Acerca">¿Cómo lo hacemos?</a>
+	    					<a class="activarEnlace" href="#Tecnologias">Tecnologías</a>
 	    					<a class="activarEnlace" href="#Contacto">Contacto</a>
-	    				</div>
+	    				</div>--->
+	    				<div class="topnav-right mt-2" id="activar">
+                        	<a class="activarEnlace active" href="#">Home</a>
+                        	<a class="activarEnlace" href="javascript:;" onclick="jumpToSectionServicios()">Servicios</a>
+                        	<a class="activarEnlace" href="javascript:;" onclick="jumpToSectionAcerca()">¿Cómo lo hacemos?</a>
+                        	<a class="activarEnlace" href="javascript:;" onclick="jumpToSectionTecnologias()">Tecnologías</a>
+                        	<a class="activarEnlace" href="#Contacto">Contacto</a>
+                    	</div>
 					</div>
 				</div>
 			</div>	
 	  	</nav>
     </div>
-  	<div class="container-fluid bg-Encabezado">
+
+    <!-- Sección Home --->
+  	<div class="container-fluid bg-Encabezado " id="Home">
     	<div class="container py-5">
     		<!--Encabezado-->
-    		<div class="row">
-    			<div class="col-md-6">
-					<img class="" src="Tit1.png">
-					<img class="" src="TitEm1.png">
-					<img class="" src="TitDe.png">
-					<img class="" src="TitTec.png">
+    		<div class="row ">
+    			<div class="col-md-7">
+					<img class="img-emp" src="TitUna.png">
+					<img class="img-emp" src="TitEm1.png">
+					<img class="img-emp" src="TitDe.png">
+					<img class="img-emp" src="TitTec.png">
     			</div>
-    			<div class="col-md-6">
-    				<div class="col-md-3">
-	    				<img src="bg-iphone.png">
+    			<div class="col-md-5">
+    				<div class="col-md-4">
+	    				<img class="img-phone" src="bg-iphone.png">
     				</div>
     			</div>
     		</div>	
     	</div>
 	</div>
-	<div class="container-fluid bg-gris pt-5" id ="Servicios">
+	<!-- Sección Servicios -->
+	<div class="container-fluid bg-gris" id ="Servicios">
     	<div class="container py-5">
-		  <!-- Services -->
-		  <section id="services">
-		    <div class="container">
-		      <div class="row">
+		  <section>
+		    <div class="row">
 		        <div class="col-lg-12 text-center">
-		          <h2 class="section-heading text-uppercase">Servicios</h2>
-		          <h3 class="section-subheading text-muted">Desarrollo de Software para Soluciones Globales.</h3>
+		        	<h2 class="section-heading">SERVICIOS</h2>
+		          	<h3 class="section-subheading text-muted">Desarrollo de Software para Soluciones Globales.</h3>
 		        </div>
-		      </div>
-		      <div class="row text-center">
-		        <div class="col-md-4">
-		          <span class="fa-stack fa-4x">
-		            <i class="fas fa-circle fa-stack-2x text-naraja"></i>
-		            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-		          </span>
-		          <h4 class="service-heading mb-4">Software Empresarial</h4>
-		          <p class="text-muted">* E-Commerce</p>
-				  <p class="text-muted">* Aplicaciones bancarias</p>
-				  <p class="text-muted">* Cotizadores financieros</p>
-				  <p class="text-muted">* Sistemas para Back-office</p>
-		        </div>
-		        <div class="col-md-4">
-		          <span class="fa-stack fa-4x">
-		            <i class="fas fa-circle fa-stack-2x text-naraja"></i>
-		            <i class="fas fa-tablet-alt fa-stack-1x fa-inverse"></i>
-		          </span>
-		          <h4 class="service-heading mb-4">App Móviles</h4>
-		          <p class="text-muted">* Progressive Web Apps</p>
-				  <p class="text-muted">* iOS y Android</p>
-				  <p class="text-muted">* Smartphone, Tablet y Smartwatch</p>
-				  <p class="text-muted">* Apple TV y Android TV</p>
+		    </div>
+		    <div class="row text-center">
+		       <div class="col-md-4">
+		          	<span class="fa-stack fa-4x">
+		            	<i class="fas fa-circle fa-stack-2x text-naraja"></i>
+		            	<i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+		          	</span>
+		          	<h4 class="service-heading mb-4">Software Empresarial</h4>
+					<p class="text-muted">* E-Commerce</p>
+					<p class="text-muted">* Aplicaciones bancarias</p>
+					<p class="text-muted">* Cotizadores financieros</p>
+					<p class="text-muted">* Sistemas para Back-office</p>
 		        </div>
 		        <div class="col-md-4">
-		          <span class="fa-stack fa-4x">
-		            <i class="fas fa-circle fa-stack-2x text-naraja"></i>
-		            <i class="fab fa-html5 fa-stack-1x fa-inverse"></i>
-		          </span>
-		          <h4 class="service-heading mb-4">App Web</h4>
+		        	<span class="fa-stack fa-4x">
+		            	<i class="fas fa-circle fa-stack-2x text-naraja"></i>
+		            	<i class="fas fa-tablet-alt fa-stack-1x fa-inverse"></i>
+		          	</span>
+					<h4 class="service-heading mb-4">App Móviles</h4>
+					<p class="text-muted">* Progressive Web Apps</p>
+					<p class="text-muted">* iOS y Android</p>
+					<p class="text-muted">* Smartphone, Tablet y Smartwatch</p>
+					<p class="text-muted">* Apple TV y Android TV</p>
+		        </div>
+		        <div class="col-md-4">
+		        	<span class="fa-stack fa-4x">
+		            	<i class="fas fa-circle fa-stack-2x text-naraja"></i>
+		            	<i class="fab fa-html5 fa-stack-1x fa-inverse"></i>
+		          	</span>
+		        	<h4 class="service-heading mb-4">App Web</h4>
 		         	<p class="text-muted">* Diseño y desarrollo web </p> 
 		         	<p class="text-muted">* (Mobile First, Responsive, y Adaptive)</p>
 		         	<p class="text-muted">* Posicionamiento en buscadores </p>	
 		        </div>
 		      </div>
-		    </div>
 		  </section>
 	    </div>
 	 </div>
-	 <!--- Acerca de  --->
-	<div class="container-fluid bg-Encabezado" id="Acerca">
+	<!--- Sección Cómo lo hacemos  --->
+	<div class="container-fluid" id="Acerca">
 		<section class="">
-			<div class="row pt-5">
-		        <div class="col-lg-12 text-center text-white">
-		          <h2 class="section-heading text-uppercase">¿Como trabajamos?</h2>
-		          <h3 class="section-subheading">Somos expertos en desarrollar de software.</h3>
+			<div class="row bg-Encabezado text-center text-white pt-5">
+		        <div class="col-lg-12">
+		        	<h2 class="section-heading text-uppercase">¿Como trabajamos?</h2>
+		          	<h3 class="section-subheading-p-3em">Somos expertos en desarrollar de software.</h3>
 		        </div>
 		    </div>
+		    <!--- Primero --->
+		  	<div class="row align-items-center ">
+                <div class="col-md-6 margin-left-x ">
+                    <img src="bussiness.jpg " width="100% " height="380 ">
+                </div>
+                <div class="col-md-6 text-center margin-left-x ">
+                    <div class="col align-self-center ">
+                        <h2 class="section-subheading ">Modelos ágiles de desarrollo de software.</h2>
+                        <p class="text-muted ">Seguimos modelos ágiles de desarrollo de software que nos permite hacer sistemas escalables, con bajos índices de error, que responden rápidamente y son compatibles con múltiples plataformas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--- Segundo --->
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center margin-left-x ">
+                    <div class="col align-self-center ">
+                        <h2 class="section-subheading ">Experiencia de usuario.</h2>
+                        <p class="text-muted ">Dedicamos tiempo y esfuerzo en hacer sistemas que sean fáciles de usar y den una buena experiencia a los usuarios. Creemos que una aplicación exitosa no debería requerir de un manual de usuario.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 margin-left-x ">
+                    <img src="bussiness.jpg " width="100% " height="380 ">
+                </div>
+            </div>
+            <!--- Tercero --->
+            <div class="row align-items-center ">
+                <div class="col-md-6 margin-left-x ">
+                    <img src="bussiness.jpg " width="100% " height="380 ">
+                </div>
+                <div class="col-md-6 text-center margin-left-x ">
+                    <div class="col align-self-center ">
+                        <h2 class="section-subheading ">Plataformas robustas.</h2>
+                        <p class="text-muted ">Las nuevas tecnologías son nuestra estrategia de desarrollo, es por ello que te orientaremos para elegir la infraestructura y lenguaje de programación adecuado de acuerdo al tamaño, presupuesto y objetivos de tu proyecto.</p>
+                    </div>
+                </div>
+            </div>
 	    </section>
-	</div> 
-	<div class="container-fluid" >
-		<section class="">
-		  <div class="row">
-		    <div class="col-md-6 margin-left-x">
-		      <img src="bussiness.jpg" width="716" height="560">
-		    </div>
-		    <div class="col-md-6 text-center margin-left-x">
-		      <div class="card-body">
-		      	<h2 class="section-heading py-5"> Módelos ágiles de desarrollo de software. </h2>
-		        <p class="text-muted"> Seguimos modelos ágiles de desarrollo de software que nos permite hacer sistemas escalables, con bajos índices de error, que responden rápidamente y son compatibles con múltiples plataformas.
-		        </p>
-		      </div>
-		    </div>
-		  </div>
-		  <!--- Segundo --->
-		  <div class="row">
-		    <div class="col-md-6 pt-5 text-center margin-left-x">
-		      <div class="card-body">
-		      	<h2 class="section-heading  py-5"> Amigable con el usuario. </h2>
-		        <p class="text-muted"> Experiencia de usuario Dedicamos tiempo y esfuerzo en hacer sistemas que sean fáciles de usar y den una buena experiencia a los usuarios. Creemos que una aplicación exitosa no debería requerir de un manual de usuario.
-		        </p>
-		      </div>
-		    </div>
-		    <div class="col-md-6 margin-left-x text-right">
-		      <img src="bussiness.jpg" width="716" height="560">
-		    </div>
-		  </div>
-		  <!--- Tercero --->
-		  <div class="row">
-		    <div class="col-md-6 margin-left-x">
-		      <img src="bussiness.jpg" width="716" height="560">
-		    </div>
-		    <div class="col-md-6 pt-5 text-center margin-left-x">
-		      <div class="card-body">
-		      	<h2 class="section-heading  py-5"> Construcciòn en plataformas robustas. </h2>
-		        <p class="text-muted"> Frameworks Nuestra estrategia de desarrollo empieza desde los cimientos. Para ello, te orientaremos para elegir la infraestructura y lenguaje de programación adecuado de acuerdo al tamaño, presupuesto y objetivos de tu proyecto.
-		        </p>
-		      </div>
-		    </div>
-		  </div>
-
-		</section>
-	</div>	
-
+	</div>
+	<!-- Sección de tecnologías -->
 	 <div class="container-fluid bg-gris py-5">
 	 	<section>
 		 	<div class="row">
 		 		<div class="container text-center">	
-			 		<div class="row mb-5">
+			 		<div class="row">
 			 			<div class="col-md-12">
-						    <h2 class="section-heading mb-5">TECNOLOGíAS</h2>
+						    <h2 class="section-heading my-4">TECNOLOGíAS</h2>
 			 			</div>
 			 		</div>
 			 		<div class="row my-5">
@@ -280,46 +284,46 @@
 		 	</div>
 		</section> 	
 	 </div>
-
+	<!--- Sección Fundadores --->
 	<section class="content-section" id="portfolio">
 	    <div class="container">
-	      <h2 class="section-heading mb-5 text-center">FUNDADORES</h2>
-	      <div class="row no-gutters">
-	        <div class="col-lg-6 text-right">
-	          <a class="portfolio-item">
-	            <span class="caption text-left">
-	              <span class="caption-content">
-	                <h2>Javier Pulido</h2>
-	                <p class="mb-0">Ing. Sistemas Computacionales</p>
-	              </span>
-	            </span>
-	            <img class="img-fluid" src="ImgPropias/javier-250.jpg" alt="">
-	          </a>
-	        </div>
-	        <div class="col-lg-6 text-right">
-	          <a class="portfolio-item">
-	            <span class="caption">
-	              <span class="caption-content text-left">
-	                <h2>Fernando alcaraz</h2>
-	                <p class="mb-0">Ing. Sistemas Computacionales</p>
-	              </span>
-	            </span>
-	            <img class="img-fluid" src="ImgPropias/fer-office.jpg" alt="">
-	          </a>
-	        </div>
-	      </div>
+	     	<h2 class="section-heading mb-5 text-center">FUNDADORES</h2>
+	      	<div class="row no-gutters">
+	        	<div class="col-lg-6 text-right">
+	          		<a class="portfolio-item">
+	            	<span class="caption text-left">
+	              		<span class="caption-content">
+	                		<h2 class="section-heading">Javier Pulido</h2>
+	                		<p class="mb-0">Ing. Sistemas Computacionales</p>
+	              		</span>
+	            	</span>
+	            	<img class="img-fluid" src="ImgPropias/javier-250.jpg" alt="">
+	          		</a>
+	        	</div>
+	        	<div class="col-lg-6 text-right">
+	          		<a class="portfolio-item">
+		            	<span class="caption">
+		              		<span class="caption-content text-left">
+		                		<h2 class="section-heading">Fernando alcaraz</h2>
+		                		<p class="mb-0">Ing. Sistemas Computacionales</p>
+		              		</span>
+		            	</span>
+		            	<img class="img-fluid" src="ImgPropias/fer-office.jpg" alt="">
+		          	</a>
+	        	</div>
+	      	</div>
 	    </div>
 	</section>
-	 <!--- Contacto --->
-	 <div class="container-fluid bg-gris py-5" id="Contacto">
+	 <!--- Sección Contacto --->
+	 <div class="container-fluid bg-gris py-4" id="Contacto">
 	 	<section>
 		 	<div class="container p-5">
 		 		<div class="row mb-5">
 		 			<div class="col-md-12 text-center">
-		 				<h2 class="section-heading text-violeta">CUENTANOS TU IDEA</h2>
+		 				<h2 class="section-heading text-violeta">¡¡¡CUENTANOS TU IDEA!!!</h2>
 		 			</div>
 		 		</div>
-		 		<div class="row text-violeta my-5">
+		 		<div class="row text-violeta">
 		 			<div class="col-md-5">
 	    				<p class="text-contacto text-violeta">
 							Ponemos a tu disposición nuestro formulario de contacto, para que te comuniques con nosotros.
@@ -352,7 +356,7 @@
 		</section> 	
 	 </div>
 	 <!--- Footer --->
-	 <div class="container-fluid bg-footer py-5">
+	 <div class="container-fluid bg-footer py-4">
 	 	<div class="container text-white">
 	 		<div class="row mt-5">
 	 			<div class="col-md-2 offset-md-1">
@@ -390,26 +394,31 @@
 		            </div>
 	 			</div>
 	 		</div>
-
 	 	</div>
 	 </div>
-	 <!---cOPY --->
+	 <!---Copy --->
 	 <div class="container-fluid bg.bg-gris">
-    	<div class="container py-2">
+    	<div class="container py-2 text-violeta text-center">
     		<!--- Menu --->
-    		<p class="text-center text-violeta">
+    		<span>
     			© 2023 Copyright, Sitio desarrollado por Sowemy
-    		</p>
+    		</span>
     	</div>
 	</div>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>--->
+	<script type="text/javascript" src="style/js/jquery-3.4.1.min.js"></script>
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
 		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<!---
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="jquery-3.4.1.min.js"></script>
+	--->	
+	<script type="text/javascript" src="style/js/bootstrap.min.js"></script>
 	<script src="goTop.js"></script>
+	<script type="text/javascript" src="MyJs.js"></script>
 </body>
 </html>
